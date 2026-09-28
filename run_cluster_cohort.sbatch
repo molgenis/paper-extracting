@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=cohort_extract
-#SBATCH --partition=gpu
+#SBATCH --partition=gpu_xe7745
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
-#SBATCH --gres=gpu:a40:2
+#SBATCH --gres=gpu:rtx6000:2
 #SBATCH --time=01:00:00
 #SBATCH --output=%x-%j.out
 #SBATCH --error=%x-%j.err
