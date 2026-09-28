@@ -654,7 +654,7 @@ LLM_PARALLEL_BASE_URLS="${LLM_PARALLEL_BASE_URLS:-http://127.0.0.1:${PORT_GPU0}/
 if command -v module >/dev/null 2>&1; then
   module purge || true
   module load GCCcore/11.3.0 || true
-  module load CUDA/12.2.0 || true
+  module load CUDA/13.2.0
   module load Python/3.10.4-GCCcore-11.3.0 || true
 fi
 
